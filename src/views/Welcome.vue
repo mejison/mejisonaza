@@ -16,7 +16,14 @@ export default {
   },
 
   methods: {
-    onClickCreateGame() {},
+    onClickCreateGame() {
+      this.$router.push({
+        name: "game",
+        params: {
+          hash: "2ef2f2f2f2f",
+        },
+      });
+    },
   },
 };
 </script>
